@@ -114,7 +114,6 @@ a:not(.inlineLink) {
 
 .blockLink:hover {
     background: #fff2;
-
 }
 
 a {
@@ -172,10 +171,10 @@ iframe {
 }
 
 #hyena {
-    width: 1%;
+    width: 5%;
     position: absolute;
     right: 40px;
-    scale: 50;
+    scale: 10;
     margin: 0 20%;
 }
 
