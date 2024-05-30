@@ -38,10 +38,10 @@ function remouse() {
 }
 
 function recenter() {
-    document.getElementById("movingTitle").style.transition = "ease-out 50ms";
+    document.getElementById("movingTitle").style.transition = "cubic-bezier(0,.57,1,.71) 50ms";
     document.getElementById("movingTitle").style.left = "50%";
     document.getElementById("movingTitle").style.top = "45%";
-    document.getElementById("movingTitle2").style.transition = "ease-out 50ms";
+    document.getElementById("movingTitle2").style.transition = "cubic-bezier(0,.57,1,.71) 50ms";
     document.getElementById("movingTitle2").style.left = "50%";
     document.getElementById("movingTitle2").style.top = "55%";
 }
