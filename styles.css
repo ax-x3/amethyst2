@@ -95,6 +95,7 @@ h1 {
     font-size: 120px;
     font-weight: 600;
     color: #fffa;
+    hyphens: manual;
 }
 
 h2 {
