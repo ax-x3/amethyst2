@@ -59,14 +59,14 @@ function footerTimeUpdate() {
     let unformatted = formatter.format(rightNow);
     let timeOfDay = parseInt(unformatted.slice(0, 2)) % 24;
     let footerTime = "<b>" + unformatted + "</b>. ";
-    if (timeOfDay >= 0 && timeOfDay < 7) {
-        footerTime += "I'm sleeping. Zzzzz...";
-    } else if (timeOfDay >= 7 && timeOfDay < 8) {
-        footerTime += "Yawwnnn! Available soon!";
-    } else if (timeOfDay >= 8 && timeOfDay < 21){
-        footerTime += "Come in, we're OPEN!";
+    if (timeOfDay > 0 && timeOfDay < 6) {
+        footerTime += "I'm probably sleeping right now.";
+    } else if (timeOfDay >= 6 && timeOfDay < 8) {
+        footerTime += "I'll be awake soon.";
+    } else if (timeOfDay >= 8 && timeOfDay < 23){
+        footerTime += "I'm probably awake right now.";
     } else {
-        footerTime += "Closing for the night!";
+        footerTime += "I'll be asleep soon.";
     }
     document.getElementById("timezone").innerHTML = footerTime;
 
